@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\orders;
+use App\order;
 use Illuminate\Http\Request;
 
 class OrdersController extends Controller
@@ -41,10 +41,10 @@ class OrdersController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\orders  $orders
+     * @param  \App\order  $orders
      * @return \Illuminate\Http\Response
      */
-    public function show(orders $orders)
+    public function show(order $orders)
     {
         //
     }
@@ -52,10 +52,10 @@ class OrdersController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\orders  $orders
+     * @param  \App\order  $orders
      * @return \Illuminate\Http\Response
      */
-    public function edit(orders $orders)
+    public function edit(order $orders)
     {
         //
     }
@@ -64,10 +64,10 @@ class OrdersController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\orders  $orders
+     * @param  \App\order  $orders
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, orders $orders)
+    public function update(Request $request, order $orders)
     {
         //
     }
@@ -75,10 +75,10 @@ class OrdersController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\orders  $orders
+     * @param  \App\order  $orders
      * @return \Illuminate\Http\Response
      */
-    public function destroy(orders $orders)
+    public function destroy(order $orders)
     {
         //
     }

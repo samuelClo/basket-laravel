@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\products;
+use App\Product;
 use Illuminate\Http\Request;
 
 class ProductsController extends Controller
@@ -14,7 +14,9 @@ class ProductsController extends Controller
      */
     public function index()
     {
-        //
+        $allProducts =  Product::orderBy('created_at', 'desc')->get();
+
+        return view('index',['products' => $allProducts]);
     }
 
     /**
@@ -41,10 +43,10 @@ class ProductsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\products  $products
+     * @param  \App\product  $products
      * @return \Illuminate\Http\Response
      */
-    public function show(products $products)
+    public function show(product $products)
     {
         //
     }
@@ -52,10 +54,10 @@ class ProductsController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\products  $products
+     * @param  \App\product  $products
      * @return \Illuminate\Http\Response
      */
-    public function edit(products $products)
+    public function edit(product $products)
     {
         //
     }
@@ -64,10 +66,10 @@ class ProductsController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\products  $products
+     * @param  \App\product  $products
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, products $products)
+    public function update(Request $request, product $products)
     {
         //
     }
@@ -75,10 +77,10 @@ class ProductsController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\products  $products
+     * @param  \App\product  $products
      * @return \Illuminate\Http\Response
      */
-    public function destroy(products $products)
+    public function destroy(product $products)
     {
         //
     }

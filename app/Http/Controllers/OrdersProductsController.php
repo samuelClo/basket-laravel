@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\orders_products;
+use App\ordersproduct;
 use Illuminate\Http\Request;
 
 class OrdersProductsController extends Controller
@@ -41,10 +41,10 @@ class OrdersProductsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\orders_products  $orders_products
+     * @param  \App\ordersproduct  $orders_products
      * @return \Illuminate\Http\Response
      */
-    public function show(orders_products $orders_products)
+    public function show(ordersproduct $orders_products)
     {
         //
     }
@@ -52,10 +52,10 @@ class OrdersProductsController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\orders_products  $orders_products
+     * @param  \App\ordersproduct  $orders_products
      * @return \Illuminate\Http\Response
      */
-    public function edit(orders_products $orders_products)
+    public function edit(ordersproduct $orders_products)
     {
         //
     }
@@ -64,10 +64,10 @@ class OrdersProductsController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\orders_products  $orders_products
+     * @param  \App\ordersproduct  $orders_products
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, orders_products $orders_products)
+    public function update(Request $request, ordersproduct $orders_products)
     {
         //
     }
@@ -75,10 +75,10 @@ class OrdersProductsController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\orders_products  $orders_products
+     * @param  \App\ordersproduct  $orders_products
      * @return \Illuminate\Http\Response
      */
-    public function destroy(orders_products $orders_products)
+    public function destroy(ordersproduct $orders_products)
     {
         //
     }
