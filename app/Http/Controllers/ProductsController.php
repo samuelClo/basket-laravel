@@ -14,9 +14,9 @@ class ProductsController extends Controller
      */
     public function index()
     {
-        $allProducts =  Product::orderBy('created_at', 'desc')->get();
+        $allProducts = Product::orderBy('created_at', 'desc')->paginate(10);
 
-        return view('index',['products' => $allProducts]);
+        return view('index', ['products' => $allProducts]);
     }
 
     /**
@@ -46,9 +46,9 @@ class ProductsController extends Controller
      * @param  \App\product  $products
      * @return \Illuminate\Http\Response
      */
-    public function show(product $products)
+    public function show(product $products, $id)
     {
-        //
+        return view('product', ['productId' => Product::findOrFail($id)]);
     }
 
     /**

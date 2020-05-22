@@ -14,3 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'ProductsController@index');
+Route::get('/product/{id}', 'ProductsController@show');
+Route::post('/basket/add', 'BasketController@create')->name('basket.add');
